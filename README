@@ -1,0 +1,31 @@
+# Concerts Project
+
+## Overview
+
+This project involves creating a concert management system using SQLAlchemy. The system includes three primary models: `Band`, `Venue`, and `Concert`. 
+
+## Models
+
+- **Band**: Represents a musical band.
+Attributes: `name`, `hometown`
+Relationships: Has many `Concerts`
+
+- **Venue**: Represents a performance venue.
+Attributes: `title`, `city`
+Relationships: Has many `Concerts`
+
+- **Concert**: Represents a concert event.
+Attributes: `date`
+Relationships: Belongs to a `Band` and a `Venue`
+
+## Schema
+
+The database schema includes the following tables:
+`bands`
+`venues`
+`concerts`
+
+## Migrations
+
+Migrations are managed using Alembic. To set up the database, initialize and apply the migrations:
+
